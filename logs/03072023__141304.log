@@ -1,0 +1,17 @@
+[ 2023-03-07 14:13:07,280 ] 21 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-03-07 14:13:07,281 ] 18 root - INFO - Reading data from database: aps and collection: sensor
+[ 2023-03-07 14:13:23,434 ] 20 root - INFO - Found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2023-03-07 14:13:23,436 ] 22 root - INFO - Dropping column: _id 
+[ 2023-03-07 14:13:25,492 ] 24 root - INFO - Row and columns in df: (36188, 171)
+[ 2023-03-07 14:13:25,493 ] 27 root - INFO - Save data in feature store
+[ 2023-03-07 14:13:28,143 ] 33 root - INFO - Create feature store folder if not available
+[ 2023-03-07 14:13:28,144 ] 37 root - INFO - Save df to feature store folder
+[ 2023-03-07 14:13:35,213 ] 42 root - INFO - split dataset into train and test set
+[ 2023-03-07 14:13:40,273 ] 46 root - INFO - create dataset directory folder if not available
+[ 2023-03-07 14:13:40,275 ] 51 root - INFO - Save df to feature store folder
+[ 2023-03-07 14:13:48,112 ] 63 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03072023__141307/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/03072023__141307/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03072023__141307/data_ingestion/dataset/test.csv')
