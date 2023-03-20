@@ -5,9 +5,9 @@ import sys,os
 from sensor.entity import config_entity
 from sensor.components.data_ingestion import DataIngestion
 from sensor.components.data_validation import DataValidation
-# from sensor.components.data_transformation import DataTransformation
-# from sensor.components.model_trainer import ModelTrainer
-# from sensor.components.model_evaluation import ModelEvaluation
+from sensor.components.data_transformation import DataTransformation
+from sensor.components.model_trainer import ModelTrainer
+from sensor.components.model_evaluation import ModelEvaluation
 
 print(__name__)
 if __name__=="__main__":
@@ -26,7 +26,7 @@ if __name__=="__main__":
                          data_ingestion_artifact=data_ingestion_artifact)
 
           data_validation_artifact = data_validation.initiate_data_validation()
-          '''
+
           #data transformation
           data_transformation_config = config_entity.DataTransformationConfig(training_pipeline_config=training_pipeline_config)
           data_transformation = DataTransformation(data_transformation_config=data_transformation_config, 
@@ -44,6 +44,6 @@ if __name__=="__main__":
            data_transformation_artifact=data_transformation_artifact,
             model_trainer_artifact=model_trainer_artifact)
           model_eval_artifact = model_eval.initiate_model_evaluation()
-          '''          
+          
      except Exception as e:
           print(e)
