@@ -22,4 +22,5 @@ sensor/entity/__init__.py
 sensor/entity/artifact_entity.py
 sensor/entity/config_entity.py
 sensor/pipeline/__init__.py
+sensor/pipeline/batch_prediction.py
 sensor/pipeline/training_pipeline.py
